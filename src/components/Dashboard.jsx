@@ -5,6 +5,7 @@ import Cita from './Cita'
 const Dashboard = () => {
   const { citas } = useContext(FirebaseContext) //Extraer todas las citas de la DB
 
+  console.log(citas)
   return (
     <Fragment>
       {citas.length === 0 ? (
@@ -17,6 +18,7 @@ const Dashboard = () => {
               <th scope='col'>Paciente</th>
               <th scope='col'>Edad</th>
               <th scope='col'>sintomas</th>
+              <th scope='col'>Alumno</th>
               <th scope='col'>Fecha</th>
               <th scope='col'>Actualizar</th>
               <th scope='col'>Eliminar</th>
